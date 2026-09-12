@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<script>
+(function(){
+  try {
+    var saved = localStorage.getItem('florexon-lang');
+    if (saved === 'kr') {
+      document.documentElement.setAttribute('data-lang', 'kr');
+      document.documentElement.setAttribute('lang', 'ko');
+    }
+  } catch (e) {}
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Florexon | Global Textile Import &amp; Distribution</title>
+<meta name="description" content="Florexon sources and distributes premium towels and home textiles from around the world into the Korean market. Discover our brand partners, sourcing process, and Korean market compliance.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Florexon">
+<meta property="og:title" content="Florexon | Global Textile Import &amp; Distribution">
+<meta property="og:description" content="Florexon connects premium global textiles with Korea — sourcing, importing, and distributing towels and home textiles.">
+<meta property="og:image" content="https://www.florexon.com/images/hero-poster.jpg">
+<meta property="og:url" content="https://www.florexon.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Florexon",
+  "alternateName": "플로렉손",
+  "url": "https://www.florexon.com/",
+  "logo": "https://www.florexon.com/images/logo.svg",
+  "description": "Florexon sources and distributes premium global towels and home textiles into the Korean market.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "402ho, 202-dong, Sunkyung Apartment, 1395 Iseopdaecheon-ro",
+    "addressLocality": "Icheon-si",
+    "addressRegion": "Gyeonggi-do",
+    "postalCode": "17347",
+    "addressCountry": "KR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@florexon.com",
+    "telephone": "+82-10-9047-7704",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --navy:#0f1c33;
+    --navy-2:#152540;
+    --navy-3:#1c3155;
+    --paper:#faf7f2;
+    --paper-2:#f3ede3;
+    --ink:#1c1c1c;
+    --muted:#6b7280;
+    --muted-2:#9ca3af;
+    --accent:#b8794a;
+    --accent-2:#96602f;
+    --line:#e7e1d5;
+    --line-dark:#2a3a5a;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 10px 30px -12px rgba(15,28,51,0.18);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;max-width:100%;}
+  body{
+    margin:0;
+    max-width:100%;
+    overflow-x:hidden;
+    font-family:'Inter','Malgun Gothic','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;margin:0;padding:0;}
+  button{font-family:inherit;cursor:pointer;}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{position:relative;}
+  .eyebrow{
+    display:inline-block;
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:14px;
+  }
+  h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-0.01em;}
+  h2{font-size:clamp(26px,3.4vw,38px);color:var(--navy);}
+  .section-head{max-width:680px;margin-bottom:48px;}
+  .section-head p{color:var(--muted);font-size:16px;margin-top:14px;}
+  .section-pad{padding:96px 0;}
+  @media (max-width:768px){ .section-pad{padding:64px 0;} }
+
+  /* Language toggle (scoped to body so it never matches <html lang="..">) */
+  body [lang="ko"]{display:none;}
+  html[data-lang="kr"] body [lang="ko"]{display:inline;}
+  html[data-lang="kr"] body [lang="en"]{display:none;}
+  html[data-lang="kr"] body span.blk[lang="ko"],
+  html[data-lang="kr"] body div.blk[lang="ko"],
+  html[data-lang="kr"] body p.blk[lang="ko"]{display:block;}
+  body .blk[lang="en"]{display:block;}
+  html[data-lang="kr"] body .blk[lang="en"]{display:none;}
+  html:not([data-lang="kr"]) body .blk[lang="ko"]{display:none;}
+
+  /* Header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    padding:18px 0;
+    transition:background .3s ease, box-shadow .3s ease, padding .3s ease;
+  }
+  header .container{display:flex;align-items:center;justify-content:space-between;gap:20px;}
+  header.scrolled{background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);box-shadow:0 4px 20px rgba(15,28,51,0.08);padding:12px 0;}
+  .logo-link img{height:34px;width:auto;}
+  .logo-link .logo-text{display:none;color:var(--navy);font-weight:800;font-size:22px;letter-spacing:-0.02em;}
+  nav.main-nav{display:flex;align-items:center;gap:26px;}
+  nav.main-nav a{
+    font-size:13.5px;font-weight:600;letter-spacing:.03em;
+    color:var(--white);
+    opacity:.92;
+    white-space:nowrap;
+    transition:opacity .2s;
+  }
+  header.scrolled nav.main-nav a{color:var(--navy);}
+  nav.main-nav a:hover{opacity:1;color:var(--accent);}
+  .head-actions{display:flex;align-items:center;gap:14px;position:relative;z-index:1002;}
+  .lang-toggle{
+    display:flex;align-items:center;gap:6px;
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius:999px;padding:5px 6px;
+    background:rgba(255,255,255,0.08);
+  }
+  header.scrolled .lang-toggle{border-color:var(--line);background:var(--paper);}
+  .lang-toggle button{
+    border:none;background:transparent;
+    font-size:12px;font-weight:700;letter-spacing:.05em;
+    padding:5px 10px;border-radius:999px;color:var(--white);opacity:.75;
+  }
+  header.scrolled .lang-toggle button{color:var(--navy);}
+  .lang-toggle button.active{background:var(--accent);color:#fff !important;opacity:1;}
+  .hamburger{
+    display:none;flex-direction:column;justify-content:center;gap:5px;
+    width:36px;height:36px;border:none;background:transparent;padding:0;
+  }
+  .hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:.25s;}
+  header.scrolled .hamburger span{background:var(--navy);}
+  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger.open span:nth-child(2){opacity:0;}
+  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  @media (max-width:980px){
+    nav.main-nav{
+      position:fixed;top:0;right:0;height:100vh;width:78%;max-width:340px;
+      background:var(--navy);
+      flex-direction:column;align-items:flex-start;justify-content:center;
+      gap:22px;padding:40px;
+      transform:translateX(100%);transition:transform .35s ease;
+      box-shadow:-10px 0 40px rgba(0,0,0,0.25);
+    }
+    nav.main-nav.open{transform:translateX(0);}
+    nav.main-nav a{color:#fff;font-size:16px;opacity:1;}
+    .hamburger{display:flex;}
+  }
+
+  /* Hero */
+  .hero{
+    min-height:100vh;
+    display:flex;align-items:center;
+    position:relative;overflow:hidden;
+    background:linear-gradient(135deg,#0b1626 0%,#152744 45%,#1c3155 100%);
+    color:#fff;
+  }
+  .hero-media{position:absolute;inset:0;z-index:0;}
+  .hero-media video, .hero-media img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  }
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(10,18,33,0.72) 0%,rgba(10,18,33,0.55) 45%,rgba(10,18,33,0.88) 100%);
+  }
+  .hero-inner{position:relative;z-index:1;padding-top:120px;padding-bottom:90px;}
+  .hero-inner .eyebrow{color:#e3b487;}
+  .hero h1{font-size:clamp(32px,5.4vw,58px);line-height:1.12;max-width:820px;color:#fff;}
+  .hero .sub{font-size:clamp(16px,2vw,19px);color:#d7dce6;margin-top:22px;max-width:560px;}
+  .hero-ctas{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 28px;border-radius:999px;font-weight:700;font-size:14.5px;
+    letter-spacing:.02em;border:1px solid transparent;transition:.2s;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:var(--accent-2);}
+  .btn-outline{border-color:rgba(255,255,255,0.55);color:#fff;}
+  .btn-outline:hover{background:rgba(255,255,255,0.12);}
+  .btn-dark{border-color:var(--navy);color:var(--navy);}
+  .btn-dark:hover{background:var(--navy);color:#fff;}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* About */
+  #about{background:var(--white);}
+  .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start;}
+  .about-copy p{color:#3a3f47;font-size:16.5px;margin:0 0 18px;}
+  .values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;}
+  .value-card{background:var(--paper);border-radius:var(--radius);padding:22px 20px;border:1px solid var(--line);}
+  .value-card .num{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.08em;}
+  .value-card h4{font-size:16px;margin:10px 0 8px;color:var(--navy);}
+  .value-card p{font-size:13.5px;color:var(--muted);margin:0;}
+  .vision-card{
+    background:var(--navy);color:#fff;border-radius:20px;padding:40px 32px;
+    background-image:url('images/trade-network.jpg');background-size:cover;background-position:center;
+    position:relative;overflow:hidden;
+  }
+  .vision-card::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(15,28,51,0.94),rgba(15,28,51,0.82));}
+  .vision-card > *{position:relative;z-index:1;}
+  .vision-card .eyebrow{color:#e3b487;}
+  .vision-card h3{font-size:26px;margin-bottom:14px;}
+  .vision-card p{color:#d7dce6;font-size:15px;margin:0;}
+
+  @media (max-width:900px){
+    .about-grid{grid-template-columns:1fr;}
+    .values{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:520px){ .values{grid-template-columns:1fr;} }
+
+  /* Founder */
+  #founder{background:var(--paper);}
+  .founder-grid{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:center;}
+  .founder-photo{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);}
+  .founder-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;}
+  .founder-quote{font-size:clamp(18px,2.4vw,22px);color:var(--navy);font-weight:500;line-height:1.55;margin:0 0 18px;}
+  .founder-quote::before{content:"\201C";color:var(--accent);font-size:1.3em;}
+  .founder-more{font-size:15.5px;color:var(--muted);line-height:1.7;margin:0 0 26px;}
+  .founder-sign{display:flex;align-items:center;gap:16px;}
+  .founder-sign img{height:52px;width:auto;}
+  .founder-name{font-weight:700;color:var(--navy);font-size:15px;}
+  .founder-role{color:var(--muted);font-size:13px;}
+  @media (max-width:820px){ .founder-grid{grid-template-columns:1fr;} .founder-photo{max-width:280px;margin:0 auto;} }
+
+  /* Why Us */
+  #why-us{background:var(--white);}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .why-card{padding:30px 24px;border:1px solid var(--line);border-radius:var(--radius);transition:.25s;}
+  .why-card:hover{border-color:var(--accent);box-shadow:var(--shadow);transform:translateY(-4px);}
+  .why-card .idx{font-size:13px;font-weight:800;color:var(--muted-2);letter-spacing:.08em;margin-bottom:16px;}
+  .why-card h4{font-size:18px;color:var(--navy);margin-bottom:10px;}
+  .why-card p{font-size:14px;color:var(--muted);margin:0;}
+  @media (max-width:980px){ .why-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .why-grid{grid-template-columns:1fr;} }
+
+  /* Services */
+  #services{background:var(--paper);}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .svc-card{background:#fff;border-radius:var(--radius);padding:28px 24px;border:1px solid var(--line);}
+  .svc-card .icon{
+    width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;margin-bottom:18px;
+  }
+  .svc-card h4{font-size:17px;color:var(--navy);margin-bottom:8px;}
+  .svc-card p{font-size:14px;color:var(--muted);margin:0;}
+  @media (max-width:900px){ .svc-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .svc-grid{grid-template-columns:1fr;} }
+
+  /* Process */
+  #process{background:var(--white);}
+  .process-track{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  .process-step{position:relative;padding:26px 18px 20px;border-top:3px solid var(--accent);}
+  .process-step .step-no{
+    width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:16px;
+  }
+  .process-step h4{font-size:15.5px;color:var(--navy);margin-bottom:8px;}
+  .process-step p{font-size:13px;color:var(--muted);margin:0;}
+  @media (max-width:980px){ .process-track{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .process-track{grid-template-columns:1fr;} }
+
+  /* Compliance */
+  #compliance{background:var(--navy);color:#fff;}
+  #compliance .section-head p{color:#b9c2d4;}
+  #compliance h2{color:#fff;}
+  .comp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .comp-card{background:var(--navy-2);border:1px solid var(--line-dark);border-radius:var(--radius);padding:26px 24px;}
+  .comp-card h4{font-size:16.5px;margin-bottom:10px;color:#f2e3d0;}
+  .comp-card p{font-size:14px;color:#c3cbdb;margin:0;}
+  @media (max-width:760px){ .comp-grid{grid-template-columns:1fr;} }
+
+  /* Brands */
+  #brands{background:var(--paper);}
+  .brand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .brand-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+  .brand-img{aspect-ratio:4/3;overflow:hidden;background:#eee;}
+  .brand-img img{width:100%;height:100%;object-fit:cover;}
+  .brand-body{padding:20px 22px 24px;}
+  .brand-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+  .brand-name{font-size:17px;font-weight:700;color:var(--navy);}
+  .badge{
+    font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    padding:4px 10px;border-radius:999px;background:#e9dfce;color:var(--accent-2);white-space:nowrap;
+  }
+  .brand-desc{font-size:13.5px;color:var(--muted);margin:0;}
+  @media (max-width:980px){ .brand-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:600px){ .brand-grid{grid-template-columns:1fr;} }
+
+  /* Channels */
+  #channels{background:#fff;}
+  .channel-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+  .channel-box{
+    border:1px solid var(--line);border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    aspect-ratio:16/9;padding:14px;background:#fff;
+    filter:grayscale(1);opacity:.75;transition:.2s;
+  }
+  .channel-box:hover{filter:none;opacity:1;border-color:var(--accent);}
+  .channel-box img{max-width:100%;max-height:100%;object-fit:contain;}
+  @media (max-width:900px){ .channel-grid{grid-template-columns:repeat(4,1fr);} }
+  @media (max-width:560px){ .channel-grid{grid-template-columns:repeat(3,1fr);} }
+
+  /* Contact */
+  #contact{background:var(--paper);}
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;}
+  .contact-info-list{display:flex;flex-direction:column;gap:20px;margin:28px 0 32px;}
+  .contact-item{display:flex;gap:14px;align-items:flex-start;}
+  .contact-item .ic{
+    width:40px;height:40px;border-radius:10px;background:var(--navy);color:#fff;flex:none;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .contact-item .lbl{font-size:12px;color:var(--muted-2);font-weight:700;letter-spacing:.05em;text-transform:uppercase;}
+  .contact-item .val{font-size:15px;color:var(--ink);font-weight:600;}
+  .contact-item .val.muted{color:var(--muted);font-weight:500;}
+  .social-row{display:flex;gap:10px;flex-wrap:wrap;}
+  .social-btn{
+    display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;
+    border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;color:var(--navy);
+  }
+  .social-btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;}
+  .profile-btn{margin-top:26px;}
+
+  .form-card{background:#fff;border-radius:20px;padding:36px;border:1px solid var(--line);box-shadow:var(--shadow);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:7px;letter-spacing:.02em;}
+  .field input, .field select, .field textarea{
+    width:100%;padding:12px 14px;border-radius:9px;border:1px solid var(--line);
+    font-family:inherit;font-size:14.5px;background:#fbfaf8;
+  }
+  .field textarea{resize:vertical;min-height:120px;}
+  .field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--accent);outline-offset:1px;}
+  .consent-notice{font-size:12px;color:var(--muted);line-height:1.65;margin:4px 0 12px;padding:12px 14px;background:#f3ede3;border-radius:9px;}
+  .consent-check{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--ink);cursor:pointer;margin-bottom:18px;font-weight:500;}
+  .consent-check input{margin-top:3px;flex:none;width:auto;}
+  .consent-check a, .footer-bottom a{color:var(--accent);text-decoration:underline;}
+  .form-msg{margin-top:14px;font-size:13.5px;display:none;}
+  .form-msg.ok{color:#1c7a4d;display:block;}
+  .form-msg.err{color:#b3271e;display:block;}
+  @media (max-width:900px){ .contact-grid{grid-template-columns:1fr;} .form-row{grid-template-columns:1fr;} }
+
+  /* Footer */
+  footer{background:#0b1424;color:#c3cbdb;padding:64px 0 24px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;}
+  .footer-logo{margin-bottom:14px;}
+  .footer-logo img{height:32px;width:auto;display:inline-block;background:#fff;border-radius:8px;padding:6px 12px;}
+  .footer-blurb{font-size:13.5px;color:#8b96ab;max-width:280px;}
+  .footer-col h5{font-size:12.5px;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
+  .footer-col ul li{margin-bottom:10px;}
+  .footer-col a{font-size:13.5px;color:#a9b3c6;}
+  .footer-col a:hover{color:#fff;}
+  .footer-col p{font-size:13.5px;color:#a9b3c6;margin:0 0 8px;}
+  .footer-bottom{
+    margin-top:52px;padding-top:24px;border-top:1px solid #1e2c46;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-size:12.5px;color:#7c869c;
+  }
+  @media (max-width:900px){ .footer-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .footer-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container">
+    <a href="#home" class="logo-link">
+      <img src="images/logo.svg" alt="Florexon logo">
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" data-nav><span lang="en">Home</span><span lang="ko">홈</span></a>
+      <a href="#about" data-nav><span lang="en">About</span><span lang="ko">회사소개</span></a>
+      <a href="#founder" data-nav><span lang="en">Founder's Note</span><span lang="ko">대표 인사말</span></a>
+      <a href="#why-us" data-nav><span lang="en">Why Us</span><span lang="ko">왜 플로렉손인가</span></a>
+      <a href="#services" data-nav><span lang="en">Services</span><span lang="ko">사업영역</span></a>
+      <a href="#process" data-nav><span lang="en">Process</span><span lang="ko">프로세스</span></a>
+      <a href="#compliance" data-nav><span lang="en">Compliance</span><span lang="ko">규제 대응</span></a>
+      <a href="#brands" data-nav><span lang="en">Brands</span><span lang="ko">브랜드</span></a>
+      <a href="#channels" data-nav><span lang="en">Channels</span><span lang="ko">판매 채널</span></a>
+      <a href="#contact" data-nav><span lang="en">Contact</span><span lang="ko">문의하기</span></a>
+    </nav>
+    <div class="head-actions">
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button type="button" id="btnEN" class="active">EN</button>
+        <button type="button" id="btnKR">KR</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <video id="heroVideo" data-src="images/hero.mp4" poster="images/hero-poster.jpg" muted loop playsinline aria-hidden="true"></video>
+    <img id="heroImgFallback" src="images/hero-poster.jpg" alt="Container ship carrying global textile cargo" style="display:none;">
+  </div>
+  <div class="container hero-inner">
+    <span class="eyebrow"><span lang="en">Textile Import &amp; Distribution — Towels</span><span lang="ko">타월·생활 섬유 전문 수입유통</span></span>
+    <h1>
+      <span lang="en">Bringing Better Textiles to Everyday Life.</span>
+      <span lang="ko">더 나은 텍스타일을, 일상 속으로.</span>
+    </h1>
+    <p class="sub">
+      <span lang="en">Florexon connects premium global textiles with Korea.</span>
+      <span lang="ko">플로렉손은 세계의 우수한 텍스타일을 한국에 연결합니다.</span>
+    </p>
+    <div class="hero-ctas">
+      <a href="#brands" class="btn btn-primary"><span lang="en">View Brands</span><span lang="ko">브랜드 보기</span></a>
+      <a href="#contact" class="btn btn-outline"><span lang="en">Contact Us</span><span lang="ko">문의하기</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">About Florexon</span><span lang="ko">회사소개</span></span>
+      <h2><span lang="en">We discover great textile brands and connect them to Korea.</span><span lang="ko">좋은 해외 섬유 브랜드를 발굴해 한국에 연결합니다.</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="blk" lang="en">Florexon is a Korea-based trading company that sources towels and home textiles from overseas brands and brings them into the Korean market.</p>
+        <p class="blk" lang="ko">플로렉손은 해외 타월·생활 섬유 브랜드를 발굴해 한국 시장에 들여오는 무역회사입니다.</p>
+
+        <p class="blk" lang="en">We work directly with brand partners abroad, reviewing product quality and market fit before a single unit crosses the border.</p>
+        <p class="blk" lang="ko">해외 브랜드와 직접 소통하며, 제품이 국내에 들어오기 전에 품질과 시장 적합성을 먼저 확인합니다.</p>
+
+        <p class="blk" lang="en">We work with a small number of brands at a time rather than a wide catalog, so each partnership gets real attention — from customs and compliance through to retail placement.</p>
+        <p class="blk" lang="ko">많은 브랜드를 넓게 다루기보다 소수의 브랜드에 집중합니다. 통관·규정 대응부터 유통 채널 입점까지 하나하나 직접 챙깁니다.</p>
+
+        <p class="blk" lang="en">For brand partners, that means one point of contact in Korea who understands both the product and the market it's entering.</p>
+        <p class="blk" lang="ko">브랜드 입장에서는, 제품과 한국 시장을 함께 이해하는 담당자 한 명과 계속 소통하게 된다는 뜻입니다.</p>
+
+        <div class="values">
+          <div class="value-card">
+            <div class="num">01</div>
+            <h4><span lang="en">We Find Good Brands</span><span lang="ko">좋은 브랜드를 찾습니다</span></h4>
+            <p><span lang="en">We select brands against our own standard — quality, design, brand value, and fit for the market.</span><span lang="ko">품질, 디자인, 브랜드 가치와 시장성을 기준으로 Florexon만의 기준에 맞는 브랜드를 선별합니다.</span></p>
+          </div>
+          <div class="value-card">
+            <div class="num">02</div>
+            <h4><span lang="en">We Prepare Them for Korea</span><span lang="ko">한국 시장에 맞게 준비합니다</span></h4>
+            <p><span lang="en">We check the regulations and labeling required for import, so products can move into the Korean market smoothly and stay there.</span><span lang="ko">수입에 필요한 규정과 표시사항 등을 확인하고 제품이 국내 시장에 안정적으로 유통될 수 있도록 준비합니다.</span></p>
+          </div>
+          <div class="value-card">
+            <div class="num">03</div>
+            <h4><span lang="en">Long-Term Over One-Time</span><span lang="ko">한 번의 거래보다 오래 함께합니다</span></h4>
+            <p><span lang="en">Rather than a short-term deal, we value understanding a brand and building the Korean market together over the long term.</span><span lang="ko">단기적인 거래보다 브랜드를 이해하고 한국 시장을 함께 만들어가는 장기적인 파트너십을 중요하게 생각합니다.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-card reveal">
+        <span class="eyebrow"><span lang="en">Our Vision</span><span lang="ko">비전</span></span>
+        <h3><span lang="en">Everyday, Better.</span><span lang="ko">Everyday, Better.</span></h3>
+        <p class="blk" lang="en">Three years from now, we want Florexon to be a company that still holds to one principle behind every product it introduces: we checked it ourselves. We want to be remembered by brands as a partner who doesn't overstate, and by customers as a name they trust enough to come back to. Rather than growing quickly, we choose to grow by keeping each relationship for the long term.</p>
+        <p class="blk" lang="ko">3년 후 플로렉손은, 소개하는 모든 제품 뒤에 '직접 확인했다'는 원칙이 그대로 남아있는 회사이고 싶습니다. 브랜드에게는 과장 없는 파트너로, 고객에게는 믿고 다시 찾을 수 있는 이름으로 기억되고 싶습니다. 빠른 확장보다, 하나의 관계를 오래 지키는 방식으로 성장하겠습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER'S NOTE -->
+<section id="founder" class="section-pad">
+  <div class="container">
+    <div class="founder-grid">
+      <div class="founder-photo reveal">
+        <img src="images/founder.jpg" alt="Yunhee Lee, Founder and CEO of Florexon">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow"><span lang="en">Founder's Note</span><span lang="ko">대표 인사말</span></span>
+        <p class="founder-quote blk" lang="en">I once received a hotel towel as a gift and started using it at home. It wasn't anything dramatic, but that single towel gave me the good feeling of still being at a hotel, right at home. That experience stayed with me — it was the moment I understood, firsthand, how much one good textile can change the texture of everyday life.</p>
+        <p class="founder-quote blk" lang="ko">저는 호텔에서 쓰던 수건을 선물로 받아 집에서 써본 적이 있습니다. 별다른 게 아니었는데도, 그 수건 하나로 집에서도 호텔에 머무는 듯한 기분 좋은 감각을 느꼈습니다. 그 경험이 오래 남았고, 좋은 텍스타일 하나가 일상의 질감을 얼마나 바꿔놓는지 직접 확인한 계기가 되었습니다.</p>
+        <p class="founder-more blk" lang="en">That's also where Florexon began. I believe a home shouldn't just be a place to stay, but a space that truly belongs to you — a place of rest. I believe good textiles genuinely add to that sense of calm. So rather than telling a flashy story, Florexon's principle is simple: we only introduce products we've personally tried and verified, honestly. I believe this principle is what builds trust — with both our brand partners and our customers.</p>
+        <p class="founder-more blk" lang="ko">플로렉손을 시작한 이유도 여기서 출발합니다. 저는 집이 단순히 머무는 공간이 아니라, 온전히 나 자신을 위한 휴식처가 되어야 한다고 생각합니다. 좋은 텍스타일은 그 휴식에 실제로 안정감을 더해주는 요소라고 믿습니다. 그래서 플로렉손은 화려한 이야기보다, 제가 직접 써보고 확인한 제품만 정직하게 소개하는 것을 원칙으로 삼습니다. 이 원칙이 브랜드와 고객 모두에게 신뢰로 이어진다고 생각합니다.</p>
+        <div class="founder-sign">
+          <img src="images/signature.png" alt="Signature of Yunhee Lee">
+          <div>
+            <div class="founder-name"><span lang="en">Yunhee Lee</span><span lang="ko">이윤희</span></div>
+            <div class="founder-role"><span lang="en">Founder &amp; CEO, Florexon</span><span lang="ko">플로렉손 대표</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Why Florexon</span><span lang="ko">왜 플로렉손인가</span></span>
+      <h2><span lang="en">Built for global brands entering Korea</span><span lang="ko">한국 시장 진입을 위한 파트너</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="idx">01</div>
+        <h4><span lang="en">Direct, Hands-On Sourcing</span><span lang="ko">실무 단계의 직접 소통</span></h4>
+        <p><span lang="en">We work directly with overseas brands at the working level and confirm quality with the physical product, not just a catalog.</span><span lang="ko">해외 브랜드와 실무 단계에서 직접 소통하고, 카탈로그가 아닌 실물로 품질을 확인합니다.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="idx">02</div>
+        <h4><span lang="en">Korean Market Fit</span><span lang="ko">한국 시장 이해</span></h4>
+        <p><span lang="en">We shape product lineups to fit Korean retail channels and consumer trends.</span><span lang="ko">국내 유통 채널과 소비자 트렌드에 맞춰 상품을 구성합니다.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="idx">03</div>
+        <h4><span lang="en">Brand Partnership</span><span lang="ko">브랜드 파트너십</span></h4>
+        <p><span lang="en">Beyond distribution, we build the market together with our brand partners.</span><span lang="ko">단순 유통을 넘어, 브랜드와 함께 시장을 만들어갑니다.</span></p>
+      </div>
+      <div class="why-card reveal">
+        <div class="idx">04</div>
+        <h4><span lang="en">Long-Term Growth</span><span lang="ko">장기적 성장</span></h4>
+        <p><span lang="en">We grow steadily with our brands as we expand into new channels.</span><span lang="ko">채널을 넓혀가며 브랜드와 함께 꾸준히 성장합니다.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Services</span><span lang="ko">사업영역</span></span>
+      <h2><span lang="en">What we do</span><span lang="ko">플로렉손이 하는 일</span></h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="icon">01</div>
+        <h4><span lang="en">Brand Sourcing</span><span lang="ko">브랜드 발굴</span></h4>
+        <p><span lang="en">We discover outstanding overseas textile brands.</span><span lang="ko">해외 우수 텍스타일 브랜드를 발굴합니다.</span></p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="icon">02</div>
+        <h4><span lang="en">Import</span><span lang="ko">수입</span></h4>
+        <p><span lang="en">We import products safely, in line with customs and domestic regulations.</span><span lang="ko">통관과 국내 규정에 맞춰 안전하게 수입합니다.</span></p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="icon">03</div>
+        <h4><span lang="en">Distribution</span><span lang="ko">국내 유통</span></h4>
+        <p><span lang="en">We build distribution structures fit for online and offline channels.</span><span lang="ko">온·오프라인 채널에 맞는 유통 구조를 만듭니다.</span></p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="icon">04</div>
+        <h4><span lang="en">Market Entry</span><span lang="ko">한국 시장 진출</span></h4>
+        <p><span lang="en">We support brands from the very first step into the Korean market.</span><span lang="ko">브랜드의 한국 시장 진입을 처음부터 함께합니다.</span></p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="icon">05</div>
+        <h4><span lang="en">Marketing</span><span lang="ko">브랜드 마케팅</span></h4>
+        <p><span lang="en">We support brand marketing tailored to each channel.</span><span lang="ko">채널별 특성에 맞는 브랜드 마케팅을 지원합니다.</span></p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="icon">06</div>
+        <h4><span lang="en">Brand Development</span><span lang="ko">브랜드 성장 지원</span></h4>
+        <p><span lang="en">We plan for long-term brand growth together.</span><span lang="ko">장기적인 관점에서 브랜드 성장을 함께 설계합니다.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Process</span><span lang="ko">프로세스</span></span>
+      <h2><span lang="en">From discovery to distribution</span><span lang="ko">발굴부터 유통까지</span></h2>
+    </div>
+    <div class="process-track">
+      <div class="process-step reveal">
+        <div class="step-no">1</div>
+        <h4><span lang="en">Discovery</span><span lang="ko">발굴</span></h4>
+        <p><span lang="en">We research textile brands and products from around the world.</span><span lang="ko">세계 각지의 텍스타일 브랜드와 제품을 조사합니다.</span></p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-no">2</div>
+        <h4><span lang="en">Verification</span><span lang="ko">검증</span></h4>
+        <p><span lang="en">We carefully check quality, materials, and certifications.</span><span lang="ko">품질, 소재, 인증 여부를 꼼꼼히 확인합니다.</span></p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-no">3</div>
+        <h4><span lang="en">Import &amp; Compliance</span><span lang="ko">수입·통관</span></h4>
+        <p><span lang="en">We handle import and customs clearance in line with domestic regulations.</span><span lang="ko">국내 규정에 맞춰 수입과 통관을 진행합니다.</span></p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-no">4</div>
+        <h4><span lang="en">Distribution</span><span lang="ko">유통 연결</span></h4>
+        <p><span lang="en">We connect products to distribution structures suited to each channel.</span><span lang="ko">채널 특성에 맞는 유통 구조로 연결합니다.</span></p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-no">5</div>
+        <h4><span lang="en">Growth Support</span><span lang="ko">성장 지원</span></h4>
+        <p><span lang="en">We continue supporting brand growth after launch.</span><span lang="ko">판매 이후에도 브랜드 성장을 함께 지원합니다.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section id="compliance" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Compliance</span><span lang="ko">규제 대응</span></span>
+      <h2><span lang="en">Korean Market Compliance</span><span lang="ko">한국 규제 대응</span></h2>
+      <p><span lang="en">We systematically manage the steps required for towel and home-textile products to be distributed in Korea.</span><span lang="ko">타월·생활 섬유 제품이 한국에서 유통되기 위해 거치는 절차를 체계적으로 관리합니다.</span></p>
+    </div>
+    <div class="comp-grid">
+      <div class="comp-card reveal">
+        <h4><span lang="en">Household Textile Safety Standards</span><span lang="ko">가정용 섬유제품 안전기준</span></h4>
+        <p><span lang="en">We manage safety-standard verification under Korea's Electrical Appliances and Consumer Products Safety Control Act for household textile items.</span><span lang="ko">전기용품 및 생활용품 안전관리법에 따른 가정용 섬유제품 안전기준 확인 절차를 관리합니다.</span></p>
+      </div>
+      <div class="comp-card reveal">
+        <h4><span lang="en">Fiber Content &amp; Quality Labeling</span><span lang="ko">섬유 혼용률·품질표시</span></h4>
+        <p><span lang="en">We comply with quality-labeling requirements such as fiber content and care instructions.</span><span lang="ko">소재 혼용률과 취급 방법 등 품질표시 기준을 준수합니다.</span></p>
+      </div>
+      <div class="comp-card reveal">
+        <h4><span lang="en">Country-of-Origin Labeling &amp; Customs</span><span lang="ko">원산지 표시 및 통관</span></h4>
+        <p><span lang="en">We clear customs in line with HS code classification and country-of-origin labeling rules for each item.</span><span lang="ko">품목별 HS코드 분류와 원산지 표시 규정을 준수해 통관을 진행합니다.</span></p>
+      </div>
+      <div class="comp-card reveal">
+        <h4><span lang="en">KC Certification for Children's Items</span><span lang="ko">유아·아동용 별도 인증</span></h4>
+        <p><span lang="en">For children's items, we separately verify whether KC certification applies.</span><span lang="ko">유아·아동 대상 제품은 KC 인증 대상 여부를 별도로 확인합니다.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Brands</span><span lang="ko">취급 브랜드</span></span>
+      <h2><span lang="en">Brands we've worked with</span><span lang="ko">플로렉손이 함께한 브랜드</span></h2>
+      <p><span lang="en">Brands Florexon has directly handled distribution for in the Korean market.</span><span lang="ko">플로렉손이 국내 유통을 직접 진행한 브랜드입니다.</span></p>
+    </div>
+    <div class="brand-grid">
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-theritage.jpg" alt="T. Heritage folded towels in grey, white, and beige"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name">T. Heritage</span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A premium hotel-style towel line in soft grey and beige tones.</p>
+          <p class="brand-desc blk" lang="ko">그레이·베이지 톤 중심의 프리미엄 호텔형 타월 라인.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-sanrio.jpg" alt="Sanrio Cinnamoroll character towel, yellow and white stripes"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name">Sanrio · Cinnamoroll</span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A children's character towel featuring Sanrio's Cinnamoroll.</p>
+          <p class="brand-desc blk" lang="ko">산리오 캐릭터 '시나모롤'을 적용한 아동용 캐릭터 타월.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-springnyou.jpg" alt="Spring&You domestic towels on a bathroom counter"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name">Spring&amp;You</span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A domestic (Korean) everyday towel brand.</p>
+          <p class="brand-desc blk" lang="ko">국내산 생활 타월 브랜드.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-yodoxiui.jpg" alt="YODO XIUI Japanese hotel face towels in blue and grey"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name">YODO XIUI</span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A Japanese hotel-grade face towel brand.</p>
+          <p class="brand-desc blk" lang="ko">일본 호텔용 페이스 타월 브랜드.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-beach-poncho.jpg" alt="Wearable hooded beach towel with palm tree print"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name"><span lang="en">Wearable Beach Towel</span><span lang="ko">입는 비치타올</span></span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A hooded, wearable beach towel for swim and travel.</p>
+          <p class="brand-desc blk" lang="ko">후드가 달린 착용형 비치 타올.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-poland-linek.jpg" alt="Colorful woven fabric coasters from Poland"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name"><span lang="en">Linek</span><span lang="ko">리넥</span></span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">Woven, embroidered living-fabric pieces from Poland.</p>
+          <p class="brand-desc blk" lang="ko">폴란드산 자수 직조 리빙 패브릭.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-pecandeco.jpg" alt="Pecan Deco towels folded on a polka dot mat"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name">Pecan Deco</span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A colorful towel brand known for its dotted pattern.</p>
+          <p class="brand-desc blk" lang="ko">도트 패턴이 특징인 컬러 타월 브랜드.</p>
+        </div>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-img"><img src="images/brand-mitsuki.jpg" alt="Mitsuki patterned kitchen dishcloths stacked"></div>
+        <div class="brand-body">
+          <div class="brand-top"><span class="brand-name">Mitsuki</span><span class="badge">Partner</span></div>
+          <p class="brand-desc blk" lang="en">A kitchen dishcloth brand with a variety of patterns.</p>
+          <p class="brand-desc blk" lang="ko">다양한 패턴의 주방용 행주 브랜드.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section id="channels" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Channels</span><span lang="ko">판매 채널</span></span>
+      <h2><span lang="en">Where to find us</span><span lang="ko">만나보실 수 있는 곳</span></h2>
+      <p><span lang="en">Florexon's partner brands are available across the following online marketplaces, department stores, and direct retail channels.</span><span lang="ko">플로렉손의 파트너 브랜드는 아래 온라인 마켓·백화점·자사몰 채널을 통해 만나보실 수 있습니다.</span></p>
+    </div>
+    <div class="channel-grid">
+      <div class="channel-box reveal"><img src="images/channel-01.jpg" alt="AK&amp; online mall"></div>
+      <div class="channel-box reveal"><img src="images/channel-02.jpg" alt="NC Department Store"></div>
+      <div class="channel-box reveal"><img src="images/channel-03.jpg" alt="Naver"></div>
+      <div class="channel-box reveal"><img src="images/channel-04.jpg" alt="Coupang"></div>
+      <div class="channel-box reveal"><img src="images/channel-05.jpg" alt="Emart"></div>
+      <div class="channel-box reveal"><img src="images/channel-06.jpg" alt="11st"></div>
+      <div class="channel-box reveal"><img src="images/channel-07.jpg" alt="Gmarket"></div>
+      <div class="channel-box reveal"><img src="images/channel-08.jpg" alt="Lotte Mart"></div>
+      <div class="channel-box reveal"><img src="images/channel-09.jpg" alt="Homeplus"></div>
+      <div class="channel-box reveal"><img src="images/channel-10.jpg" alt="AK Plaza"></div>
+      <div class="channel-box reveal"><img src="images/channel-11.jpg" alt="Hyundai Department Store"></div>
+      <div class="channel-box reveal"><img src="images/channel-12.jpg" alt="Shinsegae"></div>
+      <div class="channel-box reveal"><img src="images/channel-13.jpg" alt="SSG.com"></div>
+      <div class="channel-box reveal"><img src="images/channel-14.jpg" alt="Musinsa"></div>
+      <div class="channel-box reveal"><img src="images/channel-15.jpg" alt="Naver Smart Store"></div>
+      <div class="channel-box reveal"><img src="images/channel-16.jpg" alt="Auction"></div>
+      <div class="channel-box reveal"><img src="images/channel-17.jpg" alt="TMON"></div>
+      <div class="channel-box reveal"><img src="images/channel-18.jpg" alt="29CM"></div>
+      <div class="channel-box reveal"><img src="images/channel-19.jpg" alt="Ohou (Bucketplace)"></div>
+      <div class="channel-box reveal"><img src="images/channel-20.jpg" alt="Shinsegae Department Store"></div>
+      <div class="channel-box reveal"><img src="images/channel-21.jpg" alt="Kakao"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span lang="en">Contact</span><span lang="ko">문의하기</span></span>
+      <h2><span lang="en">Let's talk textiles</span><span lang="ko">언제든 편하게 문의해 주세요</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M4 6l8 7 8-7"/><rect x="4" y="6" width="16" height="12" rx="2"/></svg>
+            </div>
+            <div>
+              <div class="lbl"><span lang="en">Email</span><span lang="ko">이메일</span></div>
+              <a class="val" href="mailto:info@florexon.com">info@florexon.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="lbl"><span lang="en">Phone</span><span lang="ko">전화</span></div>
+              <a class="val" href="tel:+821090477704">010-9047-7704</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="lbl"><span lang="en">Address</span><span lang="ko">주소</span></div>
+              <div class="val muted">402ho, 202-dong, Sunkyung Apartment,<br>1395 Iseopdaecheon-ro, Icheon-si,<br>Gyeonggi-do, Republic of Korea<br>(Postal Code 17347)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <span class="social-btn" aria-disabled="true" title="Coming soon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.82L2 22l5.42-1.36a9.9 9.9 0 0 0 4.62 1.15h.01c5.46 0 9.9-4.45 9.9-9.91 0-5.46-4.44-9.88-9.91-9.88zm0 18.02h-.01a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.06.79.82-3-.19-.31a8.14 8.14 0 0 1-1.24-4.28c0-4.5 3.66-8.16 8.15-8.16 4.48 0 8.13 3.65 8.13 8.15 0 4.5-3.66 8.12-8.17 8.12z"/></svg>
+            WhatsApp
+          </span>
+          <span class="social-btn" aria-disabled="true" title="Coming soon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.53a2.5 2.5 0 0 1 4.98-.03zM.5 8.75h4.9V23H.5V8.75zM8.7 8.75h4.7v1.95h.07c.66-1.2 2.27-2.47 4.67-2.47 5 0 5.92 3.19 5.92 7.34V23h-4.9v-6.55c0-1.56-.03-3.57-2.24-3.57-2.24 0-2.58 1.7-2.58 3.46V23H8.7V8.75z"/></svg>
+            LinkedIn
+          </span>
+        </div>
+
+        <a href="#" class="btn btn-dark profile-btn" aria-disabled="true" onclick="return false;">
+          <span lang="en">Download Company Profile (Coming Soon)</span>
+          <span lang="ko">회사소개서 다운로드 (준비 중)</span>
+        </a>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="contactForm">
+          <input type="hidden" name="access_key" value="81e861f5-f446-45e5-aff7-eb67bf225723">
+          <input type="hidden" name="subject" value="New inquiry from florexon.com">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-row">
+            <div class="field">
+              <label><span lang="en">Name</span><span lang="ko">이름</span> *</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="field">
+              <label><span lang="en">Company</span><span lang="ko">회사명</span></label>
+              <input type="text" name="company">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label><span lang="en">Email</span><span lang="ko">이메일</span> *</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="field">
+              <label><span lang="en">Inquiry Type</span><span lang="ko">문의 유형</span></label>
+              <select name="inquiry_type" id="inquiryType">
+                <option value="Brand Partnership / 브랜드 제휴" data-en="Brand Partnership" data-ko="브랜드 제휴">Brand Partnership</option>
+                <option value="Wholesale / 도소매 문의" data-en="Wholesale" data-ko="도소매 문의">Wholesale</option>
+                <option value="General / 일반 문의" data-en="General" data-ko="일반 문의">General</option>
+                <option value="Other / 기타" data-en="Other" data-ko="기타">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label><span lang="en">Message</span><span lang="ko">문의 내용</span> *</label>
+            <textarea name="message" required></textarea>
+          </div>
+
+          <div class="consent-notice">
+            <span lang="en">Collected items: name, company, email, inquiry content. Purpose: responding to your inquiry. Retention: destroyed after the inquiry is handled (within 1 year). You may decline, but we won't be able to respond to your inquiry.</span>
+            <span lang="ko">수집 항목: 이름, 회사명, 이메일, 문의 내용 · 수집 목적: 문의 응대 · 보유 기간: 문의 처리 후 지체 없이 파기(최대 1년) · 동의를 거부할 수 있으며, 이 경우 문의 응대가 제한될 수 있습니다.</span>
+          </div>
+          <label class="consent-check">
+            <input type="checkbox" name="privacy_consent" required>
+            <span><span lang="en">I agree to the collection and use of my personal information as described above (<a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>).</span><span lang="ko">위 개인정보 수집·이용에 동의합니다 (<a href="privacy.html" target="_blank" rel="noopener">개인정보처리방침</a>).</span> *</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">
+            <span lang="en">Send Message</span><span lang="ko">보내기</span>
+          </button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/logo.svg" alt="Florexon logo"></div>
+        <p class="footer-blurb">
+          <span lang="en">Florexon connects premium global textiles with Korea.</span>
+          <span lang="ko">플로렉손은 세계의 우수한 텍스타일을 한국에 연결합니다.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5><span lang="en">Menu</span><span lang="ko">메뉴</span></h5>
+        <ul>
+          <li><a href="#about"><span lang="en">About</span><span lang="ko">회사소개</span></a></li>
+          <li><a href="#brands"><span lang="en">Brands</span><span lang="ko">브랜드</span></a></li>
+          <li><a href="#channels"><span lang="en">Channels</span><span lang="ko">판매 채널</span></a></li>
+          <li><a href="#contact"><span lang="en">Contact</span><span lang="ko">문의하기</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5><span lang="en">Contact</span><span lang="ko">연락처</span></h5>
+        <ul>
+          <li><a href="mailto:info@florexon.com">info@florexon.com</a></li>
+          <li><a href="tel:+821090477704">010-9047-7704</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5><span lang="en">Company</span><span lang="ko">사업자 정보</span></h5>
+        <p><span lang="en">Florexon</span><span lang="ko">플로렉손</span></p>
+        <p><span lang="en">CEO: Yunhee Lee</span><span lang="ko">대표: 이윤희</span></p>
+        <p><span lang="en">Biz. Reg. No. 399-07-01795</span><span lang="ko">사업자등록번호 399-07-01795</span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Florexon. All rights reserved. &middot; <a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="ko">개인정보처리방침</span></a></span>
+      <span>402ho, 202-dong, Sunkyung Apartment, 1395 Iseopdaecheon-ro, Icheon-si, Gyeonggi-do, Republic of Korea (Postal Code 17347)</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var html = document.documentElement;
+  var btnEN = document.getElementById('btnEN');
+  var btnKR = document.getElementById('btnKR');
+
+  function setLang(lang){
+    if(lang === 'kr'){
+      html.setAttribute('data-lang','kr');
+      html.setAttribute('lang','ko');
+      btnKR.classList.add('active'); btnEN.classList.remove('active');
+    } else {
+      html.setAttribute('data-lang','en');
+      html.setAttribute('lang','en');
+      btnEN.classList.add('active'); btnKR.classList.remove('active');
+    }
+    document.querySelectorAll('#inquiryType option').forEach(function(opt){
+      opt.textContent = opt.getAttribute(lang === 'kr' ? 'data-ko' : 'data-en');
+    });
+    try { localStorage.setItem('florexon-lang', lang); } catch(e){}
+  }
+  if (html.getAttribute('data-lang') === 'kr') { setLang('kr'); }
+  btnEN.addEventListener('click', function(){ setLang('en'); });
+  btnKR.addEventListener('click', function(){ setLang('kr'); });
+
+  // Header scroll state
+  var header = document.getElementById('siteHeader');
+  function onScroll(){
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile nav
+  var hamburger = document.getElementById('hamburger');
+  var mainNav = document.getElementById('mainNav');
+  hamburger.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  document.querySelectorAll('.main-nav a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mainNav.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Scroll reveal
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function(el){ el.classList.add('is-visible'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  }
+
+  // Hero video: try video first (desktop), fall back to the main photo if it
+  // errors or is too slow/laggy to start. Mobile always uses the photo.
+  var heroVideo = document.getElementById('heroVideo');
+  var heroImgFallback = document.getElementById('heroImgFallback');
+  var isDesktop = window.matchMedia('(min-width: 900px)').matches;
+
+  function showHeroImageFallback(){
+    if (!heroVideo) return;
+    heroVideo.pause();
+    heroVideo.style.display = 'none';
+    heroImgFallback.style.display = 'block';
+  }
+
+  if (isDesktop && !reduceMotion && heroVideo) {
+    var heroSrc = heroVideo.getAttribute('data-src');
+    if (heroSrc) {
+      var heroFallbackTimer = setTimeout(showHeroImageFallback, 4000);
+      heroVideo.addEventListener('playing', function(){
+        clearTimeout(heroFallbackTimer);
+      }, { once: true });
+      heroVideo.addEventListener('error', function(){
+        clearTimeout(heroFallbackTimer);
+        showHeroImageFallback();
+      });
+      heroVideo.setAttribute('src', heroSrc);
+      heroVideo.autoplay = true;
+      heroVideo.play().catch(function(){
+        clearTimeout(heroFallbackTimer);
+        showHeroImageFallback();
+      });
+    } else {
+      showHeroImageFallback();
+    }
+  } else {
+    showHeroImageFallback();
+  }
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Contact form (Web3Forms via fetch)
+  var form = document.getElementById('contactForm');
+  var msg = document.getElementById('formMsg');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    msg.className = 'form-msg';
+    msg.textContent = '';
+    var data = new FormData(form);
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    }).then(function(res){ return res.json(); }).then(function(json){
+      submitBtn.disabled = false;
+      if (json.success) {
+        msg.classList.add('ok');
+        msg.textContent = (html.getAttribute('data-lang') === 'kr')
+          ? '문의가 접수되었습니다. 빠르게 회신 드리겠습니다.'
+          : 'Thank you — your message has been sent. We will get back to you shortly.';
+        form.reset();
+      } else {
+        msg.classList.add('err');
+        msg.textContent = (html.getAttribute('data-lang') === 'kr')
+          ? '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.'
+          : 'Something went wrong. Please try again in a moment.';
+      }
+    }).catch(function(){
+      submitBtn.disabled = false;
+      msg.classList.add('err');
+      msg.textContent = (html.getAttribute('data-lang') === 'kr')
+        ? '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.'
+        : 'Something went wrong. Please try again in a moment.';
+    });
+  });
+})();
+</script>
+
+<!-- Cloudflare Web Analytics 스크립트를 여기 붙여넣으세요 -->
+
+</body>
+</html>
