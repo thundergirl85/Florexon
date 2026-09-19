@@ -354,6 +354,15 @@
     border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;color:var(--navy);
   }
   .social-btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;}
+  a.social-btn{text-decoration:none;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;}
+  a.social-btn:hover{border-color:var(--accent);box-shadow:var(--shadow);transform:translateY(-1px);}
+  .wa-qr{display:flex;align-items:center;gap:16px;margin-top:18px;padding:14px 16px;
+    border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);}
+  .wa-qr svg.qr{width:96px;height:96px;flex:0 0 auto;display:block;border-radius:8px;background:#fff;}
+  .wa-qr .qr-txt{font-size:13px;line-height:1.6;color:var(--muted);}
+  .wa-qr .qr-txt strong{display:block;font-size:13px;color:var(--navy);font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px;}
+  @media(max-width:520px){ .wa-qr{flex-direction:column;text-align:center;} }
   .profile-btn{margin-top:26px;}
 
   .form-card{background:#fff;border-radius:20px;padding:36px;border:1px solid var(--line);box-shadow:var(--shadow);}
@@ -820,14 +829,23 @@
         </div>
 
         <div class="social-row">
-          <span class="social-btn" aria-disabled="true" title="Coming soon">
+          <a class="social-btn" href="https://wa.me/821047619047" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.82L2 22l5.42-1.36a9.9 9.9 0 0 0 4.62 1.15h.01c5.46 0 9.9-4.45 9.9-9.91 0-5.46-4.44-9.88-9.91-9.88zm0 18.02h-.01a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.06.79.82-3-.19-.31a8.14 8.14 0 0 1-1.24-4.28c0-4.5 3.66-8.16 8.15-8.16 4.48 0 8.13 3.65 8.13 8.15 0 4.5-3.66 8.12-8.17 8.12z"/></svg>
             WhatsApp
-          </span>
-          <span class="social-btn" aria-disabled="true" title="Coming soon">
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/in/yunhee-lee-1303ba438" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.53a2.5 2.5 0 0 1 4.98-.03zM.5 8.75h4.9V23H.5V8.75zM8.7 8.75h4.7v1.95h.07c.66-1.2 2.27-2.47 4.67-2.47 5 0 5.92 3.19 5.92 7.34V23h-4.9v-6.55c0-1.56-.03-3.57-2.24-3.57-2.24 0-2.58 1.7-2.58 3.46V23H8.7V8.75z"/></svg>
             LinkedIn
-          </span>
+          </a>
+        </div>
+
+        <div class="wa-qr">
+          <svg class="qr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" shape-rendering="crispEdges" role="img" aria-label="WhatsApp QR code"><rect width="33" height="33" fill="#ffffff"/><path d="M4 4h7v1h-7zM12 4h1v1h-1zM14 4h1v1h-1zM17 4h1v1h-1zM19 4h1v1h-1zM22 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM15 5h4v1h-4zM20 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM13 6h2v1h-2zM19 6h2v1h-2zM22 6h1v1h-1zM24 6h3v1h-3zM28 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM12 7h2v1h-2zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM22 7h1v1h-1zM24 7h3v1h-3zM28 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h2v1h-2zM19 8h1v1h-1zM22 8h1v1h-1zM24 8h3v1h-3zM28 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM12 9h4v1h-4zM17 9h1v1h-1zM22 9h1v1h-1zM28 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h7v1h-7zM12 11h1v1h-1zM15 11h1v1h-1zM20 11h1v1h-1zM4 12h1v1h-1zM8 12h1v1h-1zM10 12h4v1h-4zM16 12h1v1h-1zM18 12h1v1h-1zM20 12h6v1h-6zM28 12h1v1h-1zM4 13h2v1h-2zM11 13h5v1h-5zM17 13h1v1h-1zM19 13h1v1h-1zM24 13h2v1h-2zM27 13h1v1h-1zM4 14h1v1h-1zM6 14h3v1h-3zM10 14h1v1h-1zM12 14h4v1h-4zM17 14h5v1h-5zM23 14h4v1h-4zM4 15h2v1h-2zM8 15h1v1h-1zM13 15h2v1h-2zM16 15h1v1h-1zM18 15h3v1h-3zM23 15h1v1h-1zM26 15h2v1h-2zM4 16h1v1h-1zM7 16h1v1h-1zM9 16h2v1h-2zM12 16h1v1h-1zM15 16h2v1h-2zM18 16h3v1h-3zM22 16h1v1h-1zM25 16h4v1h-4zM4 17h2v1h-2zM7 17h2v1h-2zM11 17h3v1h-3zM16 17h2v1h-2zM19 17h1v1h-1zM24 17h1v1h-1zM27 17h1v1h-1zM10 18h3v1h-3zM15 18h5v1h-5zM22 18h5v1h-5zM6 19h1v1h-1zM13 19h1v1h-1zM16 19h1v1h-1zM21 19h4v1h-4zM26 19h2v1h-2zM4 20h8v1h-8zM14 20h1v1h-1zM18 20h9v1h-9zM12 21h6v1h-6zM20 21h1v1h-1zM24 21h1v1h-1zM4 22h7v1h-7zM12 22h2v1h-2zM15 22h1v1h-1zM20 22h1v1h-1zM22 22h1v1h-1zM24 22h1v1h-1zM4 23h1v1h-1zM10 23h1v1h-1zM15 23h2v1h-2zM18 23h3v1h-3zM24 23h5v1h-5zM4 24h1v1h-1zM6 24h3v1h-3zM10 24h1v1h-1zM12 24h3v1h-3zM18 24h1v1h-1zM20 24h7v1h-7zM4 25h1v1h-1zM6 25h3v1h-3zM10 25h1v1h-1zM13 25h1v1h-1zM15 25h2v1h-2zM19 25h1v1h-1zM21 25h3v1h-3zM26 25h3v1h-3zM4 26h1v1h-1zM6 26h3v1h-3zM10 26h1v1h-1zM15 26h1v1h-1zM20 26h3v1h-3zM25 26h1v1h-1zM27 26h1v1h-1zM4 27h1v1h-1zM10 27h1v1h-1zM13 27h1v1h-1zM15 27h1v1h-1zM18 27h2v1h-2zM22 27h6v1h-6zM4 28h7v1h-7zM12 28h1v1h-1zM18 28h2v1h-2zM21 28h2v1h-2zM26 28h3v1h-3z" fill="#0f1c33"/></svg>
+          <div class="qr-txt">
+            <strong><span lang="en">Scan to chat</span><span lang="ko">스캔하여 문의</span></strong>
+            <span lang="en">Open WhatsApp instantly<br>+82 10-4761-9047</span>
+            <span lang="ko">왓츠앱으로 바로 연결됩니다<br>+82 10-4761-9047</span>
+          </div>
         </div>
 
         <a href="#" class="btn btn-dark profile-btn" aria-disabled="true" onclick="return false;">
